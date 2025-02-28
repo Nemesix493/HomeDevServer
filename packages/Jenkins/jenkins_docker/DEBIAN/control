@@ -1,0 +1,9 @@
+Package: Jenkins-docker
+Version: 1.0-1
+Section: admin
+Priority: optional
+Architecture: all
+Maintainer: Ton Nom <ton.email@example.com>
+Description: Service systemd pour exécuter un Docker Compose
+ Ce paquet installe un service systemd qui lance un projet Docker Compose automatiquement.
+Depends: docker-ce, docker-compose-plugin, systemd

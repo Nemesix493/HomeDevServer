@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+SERVICE_NAME="jenkins_docker"
+
+# Recharger systemd pour prendre en compte le nouveau service
+systemctl daemon-reload
+
+# Activer et démarrer le service
+systemctl enable "$SERVICE_NAME"
+
+exit 0
